@@ -1,0 +1,12 @@
+@import "head.css";
+@import "reset.css";
+@import "variables.css";
+@import "main-img.css";
+@import "section.css";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*---- font -----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
