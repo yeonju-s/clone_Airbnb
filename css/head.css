@@ -3,8 +3,12 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  margin: var(--main-margin);
+  padding: var(--main-margin);
   box-sizing: border-box;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+  width: 100vw;
 }
 
 .head__column {
