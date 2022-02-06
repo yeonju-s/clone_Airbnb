@@ -1,20 +1,23 @@
-#section__row {
+.section__row {
   margin: var(--main-margin);
   margin-top: 100px;
+}
+
+.section__title {
   font-size: 40px;
   font-weight: 800;
 }
 
-#section__row:first-child {
+.section__row {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 1358px;
 }
 
-.recommended-city {
+.recommended-city,
+.experimental {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 53px;
 }
@@ -24,7 +27,7 @@
   height: 429px;
   margin-right: 25px;
   overflow: hidden;
-  border-radius: 15px 15px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -37,6 +40,15 @@
   height: 100%;
 }
 
+.city h1 {
+  font-size: 2em;
+}
+
+.city span {
+  font-size: 1.2em;
+  margin-top: 18px;
+  display: inline-block;
+}
 .recommended-city__column:first-child .city {
   background-color: #bc1a6e;
 }
@@ -63,10 +75,94 @@
 
 .city {
   color: white;
+  padding: 22px 14px;
 }
 
-#section__row:nth-child(2) {
+.city h1,
+.city {
+  font-family: "Gugi", cursive;
 }
 
-#section__row:last-child {
+.experimental__column {
+  width: 668px;
+  height: 764px;
+  margin-right: 25px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.experimental__column:last-child {
+  margin: 0;
+}
+
+.experimental__column img {
+  height: 100%;
+}
+
+.experimental--text {
+  position: absolute;
+  color: white;
+  padding: 84px;
+}
+
+.experimental--text h1 {
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+.experimental--text a {
+  color: black;
+  display: inline-block;
+  padding: 16px 26px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.hosting {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hosting img {
+  width: 100%;
+  height: 100%;
+}
+.hosting_qna {
+  position: absolute;
+  top: 0;
+  padding: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hosting_qna span,
+.hosting_qna a {
+  display: inline-block;
+}
+
+.hosting_qna span {
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+  line-height: 105px;
+}
+
+.hosting_qna a {
+  background-color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  width: 244px;
+  text-align: center;
+  border-radius: 10px;
 }
