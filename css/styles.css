@@ -3,6 +3,7 @@
 @import "variables.css";
 @import "main-img.css";
 @import "section.css";
+@import "foot.css";
 
 a {
   text-decoration: none;
