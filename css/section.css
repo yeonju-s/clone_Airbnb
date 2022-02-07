@@ -1,6 +1,5 @@
 .section__row {
-  padding: var(--main-margin);
-  margin: 0 auto;
+  margin: var(--margin-center);
   margin-top: 100px;
 }
 
