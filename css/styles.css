@@ -4,10 +4,12 @@
 @import "main-img.css";
 @import "section.css";
 @import "foot.css";
+@import "searchbar.css";
 
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 /*---- font -----*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
