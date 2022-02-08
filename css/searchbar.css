@@ -6,6 +6,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  width: 100vw;
+  transition: all 0.2s ease-in-out;
+}
+
+#searchbar:hover {
+  background-color: white;
 }
 
 .corona {
@@ -13,7 +20,13 @@
   justify-content: center;
   height: 50px;
   align-items: center;
+  transition: display 0s;
 }
+
+.corona:hover {
+  display: none;
+}
+
 .corona a {
   color: white;
   text-decoration: underline;
@@ -44,6 +57,11 @@
 
 .searchbar__column svg {
   color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.searchbar__column svg:hover {
+  color: rgb(255, 56, 92);
 }
 
 .searchbar__column:nth-child(2) {
